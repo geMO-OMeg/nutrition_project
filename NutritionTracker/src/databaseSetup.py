@@ -15,7 +15,7 @@ class CreateDatabase:
         self.password = ""
         self.host = ""
         self.port = ""
-
+   
         self.temp_engine = None
         self.engine = None
 
@@ -69,7 +69,7 @@ class CreateDatabase:
     def createTables(self):
 
         if self.engine is None:
-            print("No DB connecion")
+            print("No DB connection")
             return
         
         if self.schema_df is not None and self.keys_df is not None:
@@ -101,7 +101,7 @@ class CreateDatabase:
     def addKeys(self):
 
         if self.engine is None:
-            print("No DB connecion")
+            print("No DB connection")
             return
             
         
@@ -128,7 +128,7 @@ class CreateDatabase:
                     """
                     try:
                         conn.execute(text(fk_sql))
-                        print(f"Foreigh key: {fk_sql} added")
+                        print(f"Foreign key: {fk_sql} added")
                     except Exception as err:
                         print(f"Error altering foreign keys {fk_sql} because: {err}")
 
@@ -136,7 +136,7 @@ class CreateDatabase:
     def populateTables(self):
 
         if self.engine is None:
-            print("No DB connecion")
+            print("No DB connection")
             return
 
         # Step 3: Populate Tables
@@ -158,6 +158,7 @@ class CreateDatabase:
 
                     except Exception as err:
                         print(f"Failed {file} because: {err}")
+
 
     def run(self):
         self.connectToDB()
