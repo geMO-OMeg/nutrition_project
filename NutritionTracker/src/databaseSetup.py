@@ -10,11 +10,11 @@ class CreateDatabase:
         self.schema_file = f"{self.data_dir}/table_schema.csv"
         self.keys_file = f"{self.data_dir}/table_keys.csv"
 
-        self.dbName = "nutrition_db" 
-        self.user = "root"
-        self.password = "FkSQL123"
-        self.host = "localhost"
-        self.port = '3306'
+        self.dbName = "" 
+        self.user = ""
+        self.password = ""
+        self.host = ""
+        self.port = ""
 
         self.temp_engine = None
         self.engine = None
