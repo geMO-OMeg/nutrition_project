@@ -6,7 +6,7 @@ class CreateDatabase:
 
     def __init__(self):
 
-        self.data_dir = "/home/bago/NutritionProj/nutrition_project/NutritionTracker/cnf-fcen-csv"
+        self.data_dir = "/home/bago/NutritionProj/nutrition_project/NutritionTracker/files/cnf-fcen-csv"
         self.schema_file = f"{self.data_dir}/table_schema.csv"
         self.keys_file = f"{self.data_dir}/table_keys.csv"
 
