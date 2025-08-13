@@ -4,12 +4,10 @@ FOOD NAME,FoodCode,INT,F
 FOOD NAME,FoodGroupID,INT,F
 FOOD NAME,FoodSourceID,INT,F
 FOOD NAME,FoodDescription,T,F
-FOOD NAME,FoodDescriptionF,T,F
 FOOD NAME,FoodDateOfEntry,D,F
 FOOD NAME,FoodDateOfPublication,D,T
-FOOD NAME,CountryCode,N,T
+FOOD NAME,CountryCode,INT,T
 FOOD NAME,ScientificName,T,T
-,,,
 NUTRIENT AMOUNT,FoodID,INT,F
 NUTRIENT AMOUNT,NutrientID,INT,F
 NUTRIENT AMOUNT,NutrientValue,FLOAT,F
@@ -17,54 +15,37 @@ NUTRIENT AMOUNT,StandardError,FLOAT,T
 NUTRIENT AMOUNT,NumberOfObservations,INT,T
 NUTRIENT AMOUNT,NutrientSourceID,INT,F
 NUTRIENT AMOUNT,NutrientDateOfEntry,D,F
-,,,
 CONVERSION FACTOR,FoodID,INT,F
 CONVERSION FACTOR,MeasureID,INT,F
 CONVERSION FACTOR,ConversionFactorValue,FLOAT,F
 CONVERSION FACTOR,ConvFactorDateOfEntry,D,F
-,,,
 REFUSE AMOUNT,FoodID,INT,F
 REFUSE AMOUNT,RefuseID,INT,F
 REFUSE AMOUNT,RefuseAmount,INT,F
 REFUSE AMOUNT,RefuseDateOfEntry,D,F
-,,,
 YIELD AMOUNT,FoodID,INT,F
 YIELD AMOUNT,YieldID,INT,F
 YIELD AMOUNT,YieldAmount,INT,F
-YIELD AMOUNT,YieldDateOfEntry,D,F
-,,,
+YIELD AMOUNT,YieldDateofEntry,D,F
 FOOD GROUP,FoodGroupID,INT,F
 FOOD GROUP,FoodGroupCode,INT,F
 FOOD GROUP,FoodGroupName,T,F
-FOOD GROUP,FoodGroupNameF,T,F
-,,,
 FOOD SOURCE,FoodSourceID,INT,F
 FOOD SOURCE,FoodSourceCode,INT,F
 FOOD SOURCE,FoodSourceDescription,T,F
-FOOD SOURCE,FoodSourceDescriiptionF,T,F
-,,,
 NUTRIENT NAME,NutrientID,INT,F
 NUTRIENT NAME,NutrientCode,INT,F
-NUTRIENT NAME,NutrientSymbol,T,F
+NUTRIENT NAME,NutrientSymbol,T,T
 NUTRIENT NAME,NutrientUnit,T,F
 NUTRIENT NAME,NutrientName,T,T
-NUTRIENT NAME,NutrientNameF,T,T
 NUTRIENT NAME,Tagname,T,T
 NUTRIENT NAME,NutrientDecimals,INT,F
-,,,
 NUTRIENT SOURCE,NutrientSourceID,INT,F
 NUTRIENT SOURCE,NutrientSourceCode,INT,F
 NUTRIENT SOURCE,NutrientSourceDescription,T,T
-NUTRIENT SOURCE,NutrientSourceDescriptionF,T,T
-,,,
 MEASURE NAME,MeasureID,INT,F
 MEASURE NAME,MeasureDescription,T,F
-MEASURE NAME,MeasureDescriptionF,T,F
-,,,
 REFUSE NAME,RefuseID,INT,F
 REFUSE NAME,RefuseDescription,T,F
-REFUSE NAME,RefuseDescriptionF,T,F
-,,,
 YIELD NAME,YieldID,INT,F
 YIELD NAME,YieldDescription,T,F
-YIELD NAME,YieldDescriptionF,T,F
